@@ -2,23 +2,25 @@
 using namespace std;
 class buku
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-int main()
 {
-    // bukunya.setJudul("Matematika");
-    // cout << bukunya.getJudul();
-    cout << bukunya.setJudul("Matematika").getJudul(); // chain function calls
-    return 0;
-}
+    string Judul;
+
+
+public:
+    buku setJudul(string Judul)
+    {
+        this->Judul = Judul;
+        return *this; // chain function
+    }
+    string getJudul()
+    {
+        return this->Judul;
+    }
+} bukunya;
+
+
+
+
+
+
+
