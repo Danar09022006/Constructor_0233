@@ -13,17 +13,17 @@ public:
 };
 
 // Denfinisi member Function
-
-
-
-
-
- angka::~angka() { //Destructor
-    cout<<endl;
-    cetakData();
-    delete[]arr;
-    cout<<"Alamat Array Sudah Dilepaskan" <<endl;
+angka::angka(int i){ // Constructor
+    panjang = i;
+    arr = new int[i];
+    isiData();
 }
+
+ 
+ 
+ 
+ 
+ 
 
  void angka:: cetakData(){
     for(int i=1;i<=panjang;i++){
